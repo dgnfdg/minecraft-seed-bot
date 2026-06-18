@@ -11,10 +11,11 @@ OPENROUTER_API_KEY = os.getenv('OPENROUTER_API_KEY')
 PORT = int(os.getenv('PORT', 10000))
 
 MODELS = [
-    "anthropic/claude-sonnet-4.6",
+    "deepseek/deepseek-chat-v3.1:free",
     "google/gemini-2.0-flash-exp:free",
     "meta-llama/llama-3.3-70b-instruct:free",
-    "deepseek/deepseek-chat:free",
+    "qwen/qwen-2.5-72b-instruct:free",
+    "mistralai/mistral-small-3.1-24b-instruct:free",
 ]
 
 intents = discord.Intents.default()
